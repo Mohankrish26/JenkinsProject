@@ -1,0 +1,466 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-14T07:50:05.155Z",
+        "line": 4,
+        "name": "User need to verify the login Functionality and get Bearer Token",
+        "description": "",
+        "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address;user-need-to-verify-the-login-functionality-and-get-bearer-token",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 471449500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add Headers Key \"Content-Type\" , Value \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.user_add_Headers_Key_Value(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51170100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add Authorization body for login Endpoint",
+            "match": {
+              "location": "StepDefinition.user_add_request_body_for_login_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3293013500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sent POST Request for login and its Endpoint",
+            "match": {
+              "location": "StepDefinition.user_sent_POST_Request_for_login_and_its_Endpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2464300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 287651800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify the Message \"Login successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login successfully\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_Message(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-14T07:50:09.266Z",
+        "line": 12,
+        "name": "User need to verify the Add User Address Functionality",
+        "description": "",
+        "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address;user-need-to-verify-the-add-user-address-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 607700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User add Headers Key \"Content-Type\" , Value \"application/json\" and Token Header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.user_add_Headers_Key_Value_and_Token_Header(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40853300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User add request body for Add User Address Endpoint",
+            "match": {
+              "location": "StepDefinition.user_add_request_body_for_Add_User_Address_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2493107400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User sent POST Request for add address and its Endpoint",
+            "match": {
+              "location": "StepDefinition.user_sent_POST_Request_for_add_address_and_its_Endpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1115500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User verify the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3500000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User verify the Message \"Address added successfully\" and get Order Id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_Message_and_get_Order_Id(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-14T07:50:11.812Z",
+        "line": 19,
+        "name": "User need to verify the Update User Address Functionality",
+        "description": "",
+        "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address;user-need-to-verify-the-update-user-address-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 748400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User add Headers Key \"Content-Type\" , Value \"application/json\" and Token Header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.user_add_Headers_Key_Value_and_Token_Header(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4474300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User add request body for Update User Address Endpoint",
+            "match": {
+              "location": "StepDefinition.user_add_request_body_for_Update_User_Address_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2649222800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User sent PUT Request for Update address and its Endpoint",
+            "match": {
+              "location": "StepDefinition.user_sent_PUT_Request_for_Update_address_and_its_Endpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User verify the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3785300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User verify the Message \"Address updated successfully\" for Confirmation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_Message_for_Confirmation(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-14T07:50:14.473Z",
+        "line": 27,
+        "name": "User need to verify the Get User Address Functionality",
+        "description": "",
+        "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address;user-need-to-verify-the-get-user-address-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 696100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User add Headers Key \"Content-Type\" , Value \"application/json\" and Token Header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.user_add_Headers_Key_Value_and_Token_Header(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1999623300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User sent GET Request for Update  address and its Endpoint",
+            "match": {
+              "location": "StepDefinition.user_sent_GET_Request_for_Update_address_and_its_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User verify the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38412900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User verify the Message \"OK\" for Confirmation of Get Address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_Message_for_Confirmation_of_Get_Address(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-14T07:50:16.512Z",
+        "line": 34,
+        "name": "User need to verify the Delete Address Functionality",
+        "description": "",
+        "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address;user-need-to-verify-the-delete-address-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 734400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User add Headers Key \"Content-Type\" , Value \"application/json\" and Token Header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 44
+                }
+              ],
+              "location": "StepDefinition.user_add_Headers_Key_Value_and_Token_Header(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3266300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User add request body for Delete User Address Endpoint",
+            "match": {
+              "location": "StepDefinition.user_add_request_body_for_Delete_User_Address_Endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1777336400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User sent DELETE Request for Delete address and its Endpoint",
+            "match": {
+              "location": "StepDefinition.user_sent_DELETE_Request_for_Delete_address_and_its_Endpoint()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User verify the response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1768200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User verify the Message \"Address deleted successfully\" for Confirmation of Delete Address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted successfully\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_verify_the_Message_for_Confirmation_of_Delete_Address(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "To verify Login,Add User Address,Update User Address, Get Address and Delete Address",
+    "description": "",
+    "id": "to-verify-login-add-user-address-update-user-address--get-address-and-delete-address",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/91770/eclipse-workspace/OmrCucumber/src/test/resources/Features/OmrFeature.feature",
+    "tags": []
+  }
+]
